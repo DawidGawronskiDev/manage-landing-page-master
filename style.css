@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  /* Bright Red */
+  --bg: hsl(12, 88%, 59%);
+  /* Dark blue */
+  --db: hsl(228, 39%, 23%);
+
+  /* ### Neutral */
+
+  /* Dark Grayish Blue */
+  --dgb: (227, 12%, 61%);
+  /* Very Dark Blue */
+  --vdb: hsl(233, 12%, 13%);
+  /* Very Pale Red */
+  --vpr: hsl(13, 100%, 96%);
+  /* Vary Light Gray */
+  --vlg: hsl(0, 0%, 98%);
+
+  /* BODY COPY */
+  font-size: 16px;
+
+  /* FONT FAMILY */
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  /* FONT WEIGHTS */
+  /* 400, 500, 700 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+  /* outline: 1px solid red; */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+main {
+  width: 80vw;
+  height: auto;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.nav-links {
+  font-weight: 400;
+  font-size: 0.875rem;
+  display: flex;
+  gap: 1.5rem;
+  color: var(--db);
+}
+
+.nav-link a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  opacity: 0.8;
+}
+
+.header-button {
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.875rem 1.25rem;
+  border-radius: 20px;
+  color: var(--vlg);
+  background-color: var(--bg);
+}
+
+.header-button:hover {
+  transition: 0.2s;
+  background-color: hsla(12, 88%, 59%, 0.8);
+  box-shadow: 0 0 20px 10px hsla(12, 88%, 59%, 0.1);
+}
