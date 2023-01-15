@@ -380,13 +380,13 @@ section {
 
   .different-list-marker::before {
     z-index: -1;
-    left: 50%;
     position: absolute;
     content: "";
-    width: calc(95vw - 56px);
     height: 100%;
-    background-color: var(--bg);
+    width: 85vw;
+    left: 50%;
     opacity: 0.5;
+    background-color: var(--bg);
   }
 }
 
