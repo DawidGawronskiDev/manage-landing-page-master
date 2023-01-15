@@ -18,12 +18,13 @@
       src="https://kit.fontawesome.com/fd800e8e7e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="menu.js" defer></script>
   </head>
   <body>
     <main class="main">
       <header class="header">
         <img src="./images/logo.svg" alt="Logo" />
-        <nav class="nav">
+        <nav class="nav unvisible" id="nav">
           <ul class="nav-links">
             <li class="nav-link"><a href="">Pricing</a></li>
             <li class="nav-link"><a href="">Product</a></li>
@@ -32,7 +33,13 @@
             <li class="nav-link"><a href="">Community</a></li>
           </ul>
         </nav>
-        <button class="get-started-button">Get Started</button>
+        <button class="header-button get-started-button">Get Started</button>
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Links"
+          class="hamburger-menu"
+          id="menu"
+        />
       </header>
 
       <section class="hero">
