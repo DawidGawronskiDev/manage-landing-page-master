@@ -390,6 +390,67 @@ section {
   }
 }
 
+/* SAID SECTION */
+
+.said {
+  z-index: 999;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.said-card-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  place-content: center;
+}
+
+.said-button {
+  max-width: auto;
+}
+
+.said-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+  width: 500px;
+  background-color: var(--vlg);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 20px;
+}
+
+.said-card * {
+  transform: translateY(-50px);
+}
+
+.said-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--db);
+}
+
+.said-card-avatar {
+  width: 75px;
+}
+
+.profile-name {
+  font-weight: 1rem;
+  font-weight: 700;
+}
+
+.said-text {
+  text-align: center;
+}
+
 @media only screen and (max-width: 890px) {
   .main {
     width: 90vw;
